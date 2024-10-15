@@ -1,0 +1,8 @@
+﻿Derleme şu saatte başlatıldı: 23:01...
+1>------ Derleme başladı: Proje: ConsoleApplication7, Yapılandırma: Debug x64 ------
+1>ConsoleApplication7.c
+1>C:\Users\ahmet\source\repos\ConsoleApplication7\ConsoleApplication7\ConsoleApplication7.c(11,10): warning C4473: 'scanf_s' : biçim dizesi için yeterli bağımsız değişken geçirilmedi
+1>ConsoleApplication7.vcxproj -> C:\Users\ahmet\source\repos\ConsoleApplication7\x64\Debug\ConsoleApplication7.exe
+1>"ConsoleApplication7.vcxproj" projesini oluşturma tamamlandı.
+========== Derleme: 1 başarılı, 0 başarısız, 0 güncel, 0 atlandı ==========
+========== Derleme şu saatte tamamlandı: 23:01 ve 00,360 saniye sürdü ==========
