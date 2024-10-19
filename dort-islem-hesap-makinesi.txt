@@ -4,10 +4,10 @@ int main() {
     char operator;
     double sayi1, sayi2;
 
-    printf("islemi girin (+, -, *, /): ");
+    puts("islemi girin (+, -, *, /): ");
     scanf("%c", &operator);
 
-    printf("iki sayi girin: ");
+    puts("iki sayi girin: ");
     scanf("%lf %lf", &sayi1, &sayi2);
 
     switch(operator) {
