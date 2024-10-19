@@ -1,8 +1,34 @@
-﻿Derleme şu saatte başlatıldı: 23:01...
-1>------ Derleme başladı: Proje: ConsoleApplication7, Yapılandırma: Debug x64 ------
-1>ConsoleApplication7.c
-1>C:\Users\ahmet\source\repos\ConsoleApplication7\ConsoleApplication7\ConsoleApplication7.c(11,10): warning C4473: 'scanf_s' : biçim dizesi için yeterli bağımsız değişken geçirilmedi
-1>ConsoleApplication7.vcxproj -> C:\Users\ahmet\source\repos\ConsoleApplication7\x64\Debug\ConsoleApplication7.exe
-1>"ConsoleApplication7.vcxproj" projesini oluşturma tamamlandı.
-========== Derleme: 1 başarılı, 0 başarısız, 0 güncel, 0 atlandı ==========
-========== Derleme şu saatte tamamlandı: 23:01 ve 00,360 saniye sürdü ==========
+#include <stdio.h>
+
+int main() {
+    char operator;
+    double sayi1, sayi2;
+
+    printf("islemi girin (+, -, *, /): ");
+    scanf("%c", &operator);
+
+    printf("iki sayi girin: ");
+    scanf("%lf %lf", &sayi1, &sayi2);
+
+    switch(operator) {
+        case '+':
+            printf("%.1lf + %.1lf = %.1lf\n", sayi1, sayi2, sayi1 + sayi2);
+            break;
+        case '-':
+            printf("%.1lf - %.1lf = %.1lf\n", sayi1, sayi2, sayi1 - sayi2);
+            break;
+        case '*':
+            printf("%.1lf * %.1lf = %.1lf\n", sayi1, sayi2, sayi1 * sayi2);
+            break;
+        case '/':
+            if (sayi2 != 0)
+                printf("%.1lf / %.1lf = %.1lf\n", sayi1, sayi2, sayi1 / sayi2);
+            else
+                printf("Hata! Bolen sıfır olamaz.\n");
+            break;
+        default:
+            printf("Gecersiz islem!\n");
+    }
+
+    return 0;
+}
